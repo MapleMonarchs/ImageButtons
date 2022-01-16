@@ -1,0 +1,14 @@
+﻿I'm sorry, but errors were detected in your script. Please correct the
+errors listed below, and try again.
+
+
+File "game/script.rpy", line 17: expected 'image_name_component' not found.
+    scene "images/RoomMain.png"
+          ^
+
+File "game/script.rpy", line 23: expected 'image_name_component' not found.
+    show "images/RoomDesk_idle.png"
+         ^
+
+Ren'Py Version: Ren'Py 7.4.11.2266
+Sun Jan 16 16:02:00 2022

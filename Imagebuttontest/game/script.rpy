@@ -3,8 +3,20 @@
 # Declare characters used by this game. The color argument colorizes the
 # name of the character.
 
-define e = Character("Eileen")
+define e        = Character("HurDurDings")
 
+image scMain    = "RoomMain.png"
+
+image Gardine   = "RoomGardine.png"
+
+image hDesk     = "RoomDesk_hover.png"
+image iDesk     = "RoomDesk_idle.png"
+image hDoor     = "RoomDoor_hover.png"
+image iDoor     = "RoomDoor_idle.png"
+image hWardrobe = "RoomWardrobe_hover.png"
+image iWardrobe = "RoomWardrobe_idle.png"
+image hWindow   = "RoomWindow_hover.png"
+image iWindow   = "RoomWindow_idle.png"
 
 # The game starts here.
 
@@ -14,13 +26,12 @@ label start:
     # add a file (named either "bg room.png" or "bg room.jpg") to the
     # images directory to show it.
 
-    scene RoomMain
-
+    scene scMain 
     # This shows a character sprite. A placeholder is used, but you can
     # replace it by adding a file named "eileen happy.png" to the images
     # directory.
 
-    show RoomDesk_idle
+    show iDesk
 
     # These display lines of dialogue.
 
