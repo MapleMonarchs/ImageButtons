@@ -2,13 +2,9 @@
 errors listed below, and try again.
 
 
-File "game/script.rpy", line 17: expected 'image_name_component' not found.
-    scene "images/RoomMain.png"
-          ^
-
-File "game/script.rpy", line 23: expected 'image_name_component' not found.
-    show "images/RoomDesk_idle.png"
-         ^
+File "game/script.rpy", line 30: expected a keyword argument, colon, or end of line.
+    imagebutton "RoomDoor_idle.png" action ShowScreen(door_notif)
+                ^
 
 Ren'Py Version: Ren'Py 7.4.11.2266
-Sun Jan 16 16:02:00 2022
+Mon Jan 17 18:46:45 2022

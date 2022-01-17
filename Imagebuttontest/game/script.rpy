@@ -1,13 +1,4 @@
-﻿#___________   _______________________________________^__
-# ___   ___ |||  ___   ___   ___    ___ ___  |   __  ,----\
-#|   | |   |||| |   | |   | |   |  |   |   | |  |  | |_____\
-#|___| |___|||| |___| |___| |___|  | O | O | |  |  |        \
-#           |||                    |___|___| |  |__|         )
-#___________|||______________________________|______________/
-#           |||                                        /--------
-#-----------'''---------------------------------------'
-
-
+﻿# choo choo 🥺
 #                                                 __   __
 #                                                 /'   `\
 #                                                Y.     .Y
@@ -20,7 +11,7 @@
 #        (_>         ,-------.                      ,-------.  |
 #         `-.______.'(_)`='(_)\_7___7___7___7__7_.'(_)`='(_)\_/
 
-define e        = Character("HurDurDings")
+define e        = Character("Test")
 
 image scMain    = "RoomMain.png"
 
@@ -35,6 +26,20 @@ image iWardrobe = "RoomWardrobe_idle.png"
 image hWindow   = "RoomWindow_hover.png"
 image iWindow   = "RoomWindow_idle.png"
 
+screen door_button:
+    imagebutton:
+        idle "iDoor"
+        hover "hDoor" 
+        action Show(door_notif)
+
+screen door_notif:
+    text "TÜR":
+        at transform:
+            align (0.5, 0.5) alpha 0.0
+            linear 0.5 alpha 1.0
+            pause 2
+            linear 0.5 alpha 0.0
+
 # The game starts here.
 
 label start:
@@ -47,6 +52,8 @@ label start:
     # This shows a character sprite. A placeholder is used, but you can
     # replace it by adding a file named "eileen happy.png" to the images
     # directory.
+
+    show door_button
 
     show iDesk
 
