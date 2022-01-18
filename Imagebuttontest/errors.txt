@@ -2,9 +2,9 @@
 errors listed below, and try again.
 
 
-File "game/script.rpy", line 30: expected a keyword argument, colon, or end of line.
-    imagebutton "RoomDoor_idle.png" action ShowScreen(door_notif)
-                ^
+File "game/script.rpy", line 44: is not terminated with a newline. (Check strings and parenthesis.)
+(Perhaps you left out a " at the end of the first line.)
+            hover "hWindow
 
 Ren'Py Version: Ren'Py 7.4.11.2266
-Mon Jan 17 18:46:45 2022
+Tue Jan 18 08:20:26 2022

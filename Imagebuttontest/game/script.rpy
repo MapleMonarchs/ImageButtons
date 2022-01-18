@@ -26,11 +26,23 @@ image iWardrobe = "RoomWardrobe_idle.png"
 image hWindow   = "RoomWindow_hover.png"
 image iWindow   = "RoomWindow_idle.png"
 
-screen door_button:
+screen room:
+
+    imagebutton:
+        idle "iWindow"
+        hover "hWindow"
+
     imagebutton:
         idle "iDoor"
         hover "hDoor" 
-        action Show(door_notif)
+        
+    imagebutton:
+        idle "iDesk"
+        hover "hDesk"
+
+    imagebutton:
+        idle "iWardrobe"
+        hover "hWardrobe"
 
 screen door_notif:
     text "TÜR":
@@ -53,7 +65,7 @@ label start:
     # replace it by adding a file named "eileen happy.png" to the images
     # directory.
 
-    show door_button
+    call screen room
 
     show iDesk
 
