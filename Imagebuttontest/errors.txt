@@ -2,9 +2,9 @@
 errors listed below, and try again.
 
 
-File "game/script.rpy", line 44: is not terminated with a newline. (Check strings and parenthesis.)
-(Perhaps you left out a " at the end of the first line.)
-            hover "hWindow
+File "game/script.rpy", line 31: u'screen' is not a keyword argument or valid child for the screen statement.
+    screen sWindow:
+          ^
 
 Ren'Py Version: Ren'Py 7.4.11.2266
-Tue Jan 18 08:20:26 2022
+Wed Jan 19 20:56:21 2022

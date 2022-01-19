@@ -26,19 +26,25 @@ image iWardrobe = "RoomWardrobe_idle.png"
 image hWindow   = "RoomWindow_hover.png"
 image iWindow   = "RoomWindow_idle.png"
 
+
 screen room:
 
     imagebutton:
         idle "iWindow"
         hover "hWindow"
+        action(Jump("uwuwuw"))
 
+    
     imagebutton:
         idle "iDoor"
         hover "hDoor" 
-        
+        action(Jump("label2"))
+
+    
     imagebutton:
         idle "iDesk"
         hover "hDesk"
+
 
     imagebutton:
         idle "iWardrobe"
@@ -67,14 +73,22 @@ label start:
 
     call screen room
 
-    show iDesk
+    label uwuwuw:
+        show Eileen
 
-    # These display lines of dialogue.
+        # These display lines of dialogue.
 
-    e "You've created a new Ren'Py game."
+        e "You've created a new Ren'Py game."
 
-    e "Once you add a story, pictures, and music, you can release it to the world!"
+        e "Once you add a story, pictures, and music, you can release it to the world!"
 
-    # This ends the game.
+        # This ends the game.
+        return
+    
+    label label2:
+
+        e "Das hier ist Label 2, du hast auf die Tür gedrückt!"
+        
+    
 
     return
